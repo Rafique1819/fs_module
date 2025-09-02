@@ -1,10 +1,12 @@
 const fs = require("fs");
+const hindi = require("./hindi");
+const english = require("./english");
 
+const message = {
+    rafique:hindi,
+    ahamad :english
+}
 
-fs.readFile("input.txt","utf-8",(error,data)=>{
-    if(error) throw error;
-    console.log(data);
-    
-})
+    console.log(message);
     
 
